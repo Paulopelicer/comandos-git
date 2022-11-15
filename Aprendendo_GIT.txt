@@ -25,6 +25,7 @@ fatal: unable to auto-detect email address (got 'Paulopelicer@DESKTOP-FJEM6N1.(n
 Usei o seguinte comando:
 git config --global user.email paulopelicer@gmail.com
 -----------------------------------------------------------------------------------------
+Fonte: https://www.freecodecamp.org/portuguese/news/10-comandos-do-git-que-todo-desenvolvedor-deveria-conhecer/
 Passo a passo para subir uma nova atualização:
 -- o comando a seguir da todas as informações a respeito da branch atual:
 -- se a branch em que estamos está atualizada
@@ -46,3 +47,9 @@ git commit -m "mensagem do commit"
 -- Git push faz o upload dos seus commits no repositório remoto.
 git push
 
+-- para trazer as atualizações do repositório remoto para minha máquina local
+-- muito útil para trabalhar em conjunto com outros desenvolvedores
+-- O comando git pull é usado para obter as atualizações de um repositório remoto.
+/* Esse comando é uma combinação de git fetch e git merge, o que significa que, quando usamos
+git pull, ele recebe as atualizações do repositório remoto (git fetch) e aplica imediatamente as 
+alterações mais recentes em seu espaço de trabalho local (git merge).*/
