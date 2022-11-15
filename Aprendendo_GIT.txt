@@ -1,0 +1,48 @@
+Como configurar o GIT no meu computador windows:
+https://www.youtube.com/watch?v=mmcOw2ynWEs
+-----------------------------------------------------------------------------------------
+git clone
+criei o repositório e clonei no espaço de trabalho que criei chamado C:\Users\Paulo Cesar Pelicer\OneDrive\Área de Trabalho\workspace\
+cliquei com o botão direito -> git bash here 
+git clone https://github.com/Paulopelicer/SQL.git --essa url peguei dentro do próprio repositório no git em code -> local -> Clone -> https
+-----------------------------------------------------------------------------------------
+Configurando o GIT pela primeira vez:
+$ git commit -m "comandos SQL de criação de tabelas"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Paulopelicer@DESKTOP-FJEM6N1.(none)')
+
+Usei o seguinte comando:
+git config --global user.email paulopelicer@gmail.com
+-----------------------------------------------------------------------------------------
+Passo a passo para subir uma nova atualização:
+-- o comando a seguir da todas as informações a respeito da branch atual:
+-- se a branch em que estamos está atualizada
+-- se precisamos fazer o commit, push ou pull de algo
+-- se os arquivos foram criados, modificados ou excluídos 
+git status 
+
+-- Ao criarmos, modificarmos ou excluirmos um arquivo, essas alterações acontecerão em nosso espaço de trabalho local
+-- e não serão incluídas no próximo commit (a menos que alteremos as configurações).
+-- Precisamos usar o comando git add para incluir as alterações de um ou vários arquivos em nosso próximo commit.
+git add <arquivo> --para add um arquivo específico
+git add . --para add tudo ao mesmo tempo
+
+-- Git commit é como definir um ponto de verificação no processo de desenvolvimento. Você pode voltar a esse ponto mais tarde, se necessário.
+-- Também precisamos escrever uma mensagem breve para explicar o que desenvolvemos ou alteramos no código-fonte.
+git commit -m "mensagem do commit"
+
+-- Após fazer o commit de minhas alterações, a próxima coisa a fazer é enviar minhas alterações para servidor remoto.
+-- Git push faz o upload dos seus commits no repositório remoto.
+git push
+
