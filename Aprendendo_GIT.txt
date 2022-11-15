@@ -26,11 +26,12 @@ Usei o seguinte comando:
 git config --global user.email paulopelicer@gmail.com
 -----------------------------------------------------------------------------------------
 Fonte: https://www.freecodecamp.org/portuguese/news/10-comandos-do-git-que-todo-desenvolvedor-deveria-conhecer/
+
 Passo a passo para subir uma nova atualização:
 -- o comando a seguir da todas as informações a respeito da branch atual:
 -- se a branch em que estamos está atualizada
 -- se precisamos fazer o commit, push ou pull de algo
--- se os arquivos foram criados, modificados ou excluídos 
+-- se os arquivos foram criados, modificados ou excluídos. 
 git status 
 
 -- Ao criarmos, modificarmos ou excluirmos um arquivo, essas alterações acontecerão em nosso espaço de trabalho local
@@ -53,3 +54,4 @@ git push
 /* Esse comando é uma combinação de git fetch e git merge, o que significa que, quando usamos
 git pull, ele recebe as atualizações do repositório remoto (git fetch) e aplica imediatamente as 
 alterações mais recentes em seu espaço de trabalho local (git merge).*/
+git pull
